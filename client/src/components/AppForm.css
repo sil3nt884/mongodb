@@ -1,0 +1,12 @@
+#uploadButton {
+    min-width: 100px;
+}
+#fileName{
+    display: inline;
+    padding-right: 10px;
+}
+
+#loaded{
+    display: none;
+    padding-top: 10px;
+}
