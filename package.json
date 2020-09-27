@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "npm run build --prefix client && node ./bin/www",
-    "dev": "concurrently \"npm start --prefix client\" \"node ./bin/www\""
+    "dev": "concurrently \"npm start --prefix client\" \"node ./bin/www\"",
+    "installAll": "npm install && npm run reactinstall",
+    "reactinstall": "cd client && npm install"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -21,6 +23,7 @@
     "mongoose": "^5.10.7",
     "morgan": "~1.9.1",
     "multer": "^1.4.2",
+    "node-xlsx": "^0.15.0",
     "xlsx": "^0.16.7"
   },
   "devDependencies": {
